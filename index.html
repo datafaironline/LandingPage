@@ -1,10 +1,13 @@
 <html>
     <head>
       <link href="css/boxicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             body{
                 text-align:center;
                 margin: 0px;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                color:#FFF;
             }
             .container{
                 margin: 0px 12.5vw;
@@ -14,26 +17,78 @@
                 margin: 10px 0px;
             }
             .social-links a{
-                font-size: 24px;
-                color: #46b8db;
+                font-size: 4vh;
+                color: #FFF;
             }
             .social-links a:hover{
-                color: #3893af;
+                color: #45b7db;
             }
             .center{
                 margin-top:25vh;
                 max-width: 75vw;
+                filter: drop-shadow(2px 4px 6px black);
+            }
+            section{
+                height: 100vh;
+                width: 100%;
+                /* background-color:#fcfcfc; */
+            }
+            .main {
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                height: 100vh;
+            }
+            .btn-radius{
+                border-radius: 50px;
+            }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <img class="center" src="img/logo.png" />
-            <div class="social-links">
-            <a href="https://twitter.com/datafaironline" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/datafair" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/datafaironline" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          </div>    
+        <div class="main">
+            <section class="isometric">
+                <div class="container">
+                    <img class="center" src="img/logo.png" />
+                    <div class="social-links">
+                        <a href="https://twitter.com/datafaironline" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/datafair" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/datafaironline" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                              <zero-md src="/team.md"></zero-md>
+                        </div>
+                        <div class="col-sm">
+                          <a href="https://github.com/datafaironline/datafaironline.github.io/edit/master/team.md" type="button" class="btn btn-primary btn-lg btn-radius">Join us</a>
+                          <p>
+                            <small>
+                                * Add your name in team.md file and add a pull request to the repository.
+                              </small>
+                          </p>
+                        </div>
+                      </div>
+                </div>  
+            </section>
         </div>
+        <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+        <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+        <!-- Load the element definition -->
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+        
     </body>
 </html>
