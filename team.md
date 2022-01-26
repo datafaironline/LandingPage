@@ -1,3 +1,3 @@
-# Team 
+## Team 
 
-- [Abdelhak Bahri](https://github.com/Abdelhak-Bahri)
+[Abdelhak Bahri](https://github.com/Abdelhak-Bahri)
